@@ -55,7 +55,7 @@ void sobelCallback(int state, void* userData)
 int main( int argc, const char** argv )
 {
 	// Read images
-	img= imread("../lena.jpg");
+	img= imread("../img/lena.jpeg");
 	
 	// Create windows
 	namedWindow("Lena");
