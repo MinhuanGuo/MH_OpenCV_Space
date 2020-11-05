@@ -5,4 +5,4 @@ find_package( OpenCV REQUIRED )
 
 set(SOURCE_FILES test.cpp)
 add_executable(${PROJECT_NAME}  ${SOURCE_FILES})
-target_link_libraries( ${PROJECT_NAME}  ${ALL_LIB_RAF} ${OpenCV_LIBS} )
+target_link_libraries( ${PROJECT_NAME}  ${ALL_LIB_RAF} ${OpenCV_LIBS}  -lGL -lGLU)

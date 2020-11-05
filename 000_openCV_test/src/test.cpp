@@ -3,76 +3,85 @@
 #include <sstream>
 using namespace std;
 
+// OpenGL includes
+#ifdef __APPLE__
+#include <OpenGL/gl.h>
+#else
+#include <GL/gl.h>
+#endif
+
 // OpenCV includes
 #include "opencv2/core.hpp"
 #include "opencv2/imgproc.hpp"
 #include "opencv2/highgui.hpp"
 using namespace cv;
 
-Mat img;
-bool applyGray=false;
-bool applyBlur=false;
-bool applySobel=false;
+Mat frame;
+GLfloat angle= 0.0;
+GLuint texture; 
+VideoCapture camera;
 
-void applyFilters(){
-	Mat result;
-	img.copyTo(result);
-	if(applyGray){
-		cvtColor(result, result, COLOR_BGR2GRAY);
-	}
-	if(applyBlur){
-		blur(result, result, Size(5,5));	
-	}
-	if(applySobel){
-		Sobel(result, result, CV_8U, 1, 1);	
-	}
-	imshow("Lena", result);
+int loadTexture() {
+
+    if (frame.data==NULL) return -1;
+   
+    glBindTexture( GL_TEXTURE_2D, texture ); //bind the texture to it's array
+    glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);
+    
+    glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, frame.cols, frame.rows,0, GL_BGR, GL_UNSIGNED_BYTE, frame.data);
+    return 0;
+
 }
 
-void grayCallback(int state, void* userData)
+void on_opengl(void* param)
 {
-	applyGray= true;
-	applyFilters();
-}
-void bgrCallback(int state, void* userData)
-{
-	applyGray= false;
-	applyFilters();
-}
+    glLoadIdentity();  
+    // Load Texture
+    glBindTexture( GL_TEXTURE_2D, texture ); 
+    // Rotate plane
+    glRotatef( angle, 0.0f, 0.0f, 1.0f );
+    // Create the plate
+    glBegin (GL_QUADS);
+    glTexCoord2d(0.0,0.0); glVertex2d(-1.0,-1.0); 
+    glTexCoord2d(1.0,0.0); glVertex2d(+1.0,-1.0); 
+    glTexCoord2d(1.0,1.0); glVertex2d(+1.0,+1.0);
+    glTexCoord2d(0.0,1.0); glVertex2d(-1.0,+1.0);
+    glEnd();
 
-void blurCallback(int state, void* userData)
-{
-	applyBlur= (bool)state;
-	applyFilters();
-}
-
-void sobelCallback(int state, void* userData)
-{
-	applySobel= !applySobel;
-	applyFilters();
 }
 
 int main( int argc, const char** argv )
 {
-	// Read images
-	img= imread("../img/lena.jpeg");
-	
-	// Create windows
-	namedWindow("Lena");
-	
-	// create Buttons
-	createButton("Blur", blurCallback, NULL, QT_CHECKBOX, 0);
+    // Open WebCam
+    camera.open(0);
+    if(!camera.isOpened()){
+        camera.open("Recording3.webm");
+        if(!camera.isOpened())
+            return -1;
+    }
 
-	createButton("Gray",grayCallback,NULL,QT_RADIOBOX, 0);
-	createButton("RGB",bgrCallback,NULL,QT_RADIOBOX, 1);
+    // Create new windows with supports from OpenGL
+    namedWindow("OpenGL Camera", WINDOW_OPENGL);
+    
+    // Enable texture
+    glEnable( GL_TEXTURE_2D );
+    glGenTextures(1, &texture);
+    
+    setOpenGlDrawCallback("OpenGL Camera", on_opengl);//设置OpenGL回调
 
-	createButton("Sobel",sobelCallback,NULL,QT_PUSH_BUTTON, 0);
-	
-	// wait app for a key to exit
-	waitKey(0);
+    while(waitKey(30)!='q'){
+        camera >> frame;
+        // Create first texture
+        loadTexture();
+        updateWindow("OpenGL Camera");
+        angle =angle+1;
+    }
+    
 	
 	// Destroy the windows
-	destroyWindow("Lena");
+	destroyWindow("OpenGL Camera");
 	
 	return 0;
 }
