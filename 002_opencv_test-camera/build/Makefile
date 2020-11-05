@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mh/MH_OpenCV_Test/002_opencv_test-camera/build
+CMAKE_SOURCE_DIR = /home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/build
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mh/MH_OpenCV_Test/002_opencv_test-camera/build
+CMAKE_BINARY_DIR = /home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/MH_OpenCV_Test/002_opencv_test-camera/build/CMakeFiles /home/mh/MH_OpenCV_Test/002_opencv_test-camera/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/build/CMakeFiles /home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/MH_OpenCV_Test/002_opencv_test-camera/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ demo/fast:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
 .PHONY : demo/fast
 
-home/mh/MH_OpenCV_Test/002_opencv_test-camera/src/demo.o: home/mh/MH_OpenCV_Test/002_opencv_test-camera/src/demo.cpp.o
+home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/src/demo.o: home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/src/demo.cpp.o
 
-.PHONY : home/mh/MH_OpenCV_Test/002_opencv_test-camera/src/demo.o
+.PHONY : home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/src/demo.o
 
 # target to build an object file
-home/mh/MH_OpenCV_Test/002_opencv_test-camera/src/demo.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/home/mh/MH_OpenCV_Test/002_opencv_test-camera/src/demo.cpp.o
-.PHONY : home/mh/MH_OpenCV_Test/002_opencv_test-camera/src/demo.cpp.o
+home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/src/demo.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/src/demo.cpp.o
+.PHONY : home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/src/demo.cpp.o
 
-home/mh/MH_OpenCV_Test/002_opencv_test-camera/src/demo.i: home/mh/MH_OpenCV_Test/002_opencv_test-camera/src/demo.cpp.i
+home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/src/demo.i: home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/src/demo.cpp.i
 
-.PHONY : home/mh/MH_OpenCV_Test/002_opencv_test-camera/src/demo.i
+.PHONY : home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/src/demo.i
 
 # target to preprocess a source file
-home/mh/MH_OpenCV_Test/002_opencv_test-camera/src/demo.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/home/mh/MH_OpenCV_Test/002_opencv_test-camera/src/demo.cpp.i
-.PHONY : home/mh/MH_OpenCV_Test/002_opencv_test-camera/src/demo.cpp.i
+home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/src/demo.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/src/demo.cpp.i
+.PHONY : home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/src/demo.cpp.i
 
-home/mh/MH_OpenCV_Test/002_opencv_test-camera/src/demo.s: home/mh/MH_OpenCV_Test/002_opencv_test-camera/src/demo.cpp.s
+home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/src/demo.s: home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/src/demo.cpp.s
 
-.PHONY : home/mh/MH_OpenCV_Test/002_opencv_test-camera/src/demo.s
+.PHONY : home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/src/demo.s
 
 # target to generate assembly for a file
-home/mh/MH_OpenCV_Test/002_opencv_test-camera/src/demo.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/home/mh/MH_OpenCV_Test/002_opencv_test-camera/src/demo.cpp.s
-.PHONY : home/mh/MH_OpenCV_Test/002_opencv_test-camera/src/demo.cpp.s
+home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/src/demo.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/src/demo.cpp.s
+.PHONY : home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/src/demo.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... demo"
-	@echo "... home/mh/MH_OpenCV_Test/002_opencv_test-camera/src/demo.o"
-	@echo "... home/mh/MH_OpenCV_Test/002_opencv_test-camera/src/demo.i"
-	@echo "... home/mh/MH_OpenCV_Test/002_opencv_test-camera/src/demo.s"
+	@echo "... home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/src/demo.o"
+	@echo "... home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/src/demo.i"
+	@echo "... home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/002_opencv_test-camera/src/demo.s"
 .PHONY : help
 
 

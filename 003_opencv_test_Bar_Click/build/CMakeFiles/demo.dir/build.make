@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/build
+CMAKE_SOURCE_DIR = /home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/build
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/build
+CMAKE_BINARY_DIR = /home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/demo.dir/depend.make
@@ -57,27 +57,27 @@ include CMakeFiles/demo.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/demo.dir/flags.make
 
-CMakeFiles/demo.dir/home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.o: CMakeFiles/demo.dir/flags.make
-CMakeFiles/demo.dir/home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.o: /home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/demo.dir/home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.o -c /home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp
+CMakeFiles/demo.dir/home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.o: /home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/demo.dir/home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.o -c /home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp
 
-CMakeFiles/demo.dir/home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp > CMakeFiles/demo.dir/home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.i
+CMakeFiles/demo.dir/home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp > CMakeFiles/demo.dir/home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.i
 
-CMakeFiles/demo.dir/home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp -o CMakeFiles/demo.dir/home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.s
+CMakeFiles/demo.dir/home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp -o CMakeFiles/demo.dir/home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.s
 
 # Object files for target demo
 demo_OBJECTS = \
-"CMakeFiles/demo.dir/home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.o"
+"CMakeFiles/demo.dir/home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.o"
 
 # External object files for target demo
 demo_EXTERNAL_OBJECTS =
 
-demo: CMakeFiles/demo.dir/home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.o
+demo: CMakeFiles/demo.dir/home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.o
 demo: CMakeFiles/demo.dir/build.make
 demo: /usr/local/lib/libopencv_dnn.so.4.2.0
 demo: /usr/local/lib/libopencv_gapi.so.4.2.0
@@ -95,7 +95,7 @@ demo: /usr/local/lib/libopencv_flann.so.4.2.0
 demo: /usr/local/lib/libopencv_imgproc.so.4.2.0
 demo: /usr/local/lib/libopencv_core.so.4.2.0
 demo: CMakeFiles/demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable demo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/demo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/demo.dir/clean:
 .PHONY : CMakeFiles/demo.dir/clean
 
 CMakeFiles/demo.dir/depend:
-	cd /home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/build /home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/build /home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/build /home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/build /home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/build/CMakeFiles/demo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/build /home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/build /home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/build /home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/build /home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/build/CMakeFiles/demo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/demo.dir/depend
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/build
+CMAKE_SOURCE_DIR = /home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/build
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/build
+CMAKE_BINARY_DIR = /home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/build/CMakeFiles /home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/build/CMakeFiles /home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ demo/fast:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
 .PHONY : demo/fast
 
-home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.o: home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.o
+home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.o: home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.o
 
-.PHONY : home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.o
+.PHONY : home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.o
 
 # target to build an object file
-home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.o
-.PHONY : home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.o
+home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.o
+.PHONY : home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.o
 
-home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.i: home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.i
+home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.i: home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.i
 
-.PHONY : home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.i
+.PHONY : home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.i
 
 # target to preprocess a source file
-home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.i
-.PHONY : home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.i
+home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.i
+.PHONY : home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.i
 
-home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.s: home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.s
+home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.s: home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.s
 
-.PHONY : home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.s
+.PHONY : home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.s
 
 # target to generate assembly for a file
-home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.s
-.PHONY : home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.cpp.s
+home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.s
+.PHONY : home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... demo"
-	@echo "... home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.o"
-	@echo "... home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.i"
-	@echo "... home/mh/MH_OpenCV_Test/003_opencv_test_Bar_Click/src/test.s"
+	@echo "... home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.o"
+	@echo "... home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.i"
+	@echo "... home/mh/MH_OpenCV_TUT/MH_OpenCV_Space/003_opencv_test_Bar_Click/src/test.s"
 .PHONY : help
 
 
