@@ -1,4 +1,9 @@
-rm -rf build # clear /build/ foler
+# clear /build/ foler
+rm -rf build 
+
 mkdir -p build && cd build
-cmake -D CMAKE_BUILD_TYPE=debug ../src  #../src is the folder address where CMakeLists.txt is
+
+#../src is the folder address where CMakeLists.txt is
+cmake -D CMAKE_BUILD_TYPE=debug ../src  
+
 make

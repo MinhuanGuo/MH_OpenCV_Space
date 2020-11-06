@@ -41,7 +41,7 @@ void on_opengl(void* param)
     // Load Texture
     glBindTexture( GL_TEXTURE_2D, texture ); 
     // Rotate plane
-    glRotatef( angle, 1.0f, 1.0f, 1.0f );
+    glRotatef( angle, 0.0f, 0.0f, 1.0f );
     // Create the plate
     glBegin (GL_QUADS);
     glTexCoord2d(0.0,0.0); glVertex2d(-1.0,-1.0); 
@@ -76,7 +76,7 @@ int main( int argc, const char** argv )
         // Create first texture
         loadTexture();
         updateWindow("OpenGL Camera");
-        angle =angle+4;
+        angle =angle+10;
     }
     
 	
